@@ -10,10 +10,10 @@ import java.time.Instant;
 @EqualsAndHashCode
 
 public class Product {
-    int id;
-    String name;
-    Instant creationDatetime;
-    Category category;
+    private final int id;
+    private final String name;
+    private final Instant creationDatetime;
+    private final Category category;
 
     public String getCategoryName() {
         return null;
