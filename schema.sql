@@ -1,7 +1,7 @@
 CREATE TABLE Product(
     id int PRIMARY KEY NOT NULL,
     name VARCHAR NOT NULL,
-    price INT,
+    price DECIMAL,
     creation_datetime timestamp
 );
 
