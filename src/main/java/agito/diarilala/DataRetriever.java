@@ -42,7 +42,6 @@ public class DataRetriever {
         String query = "SELECT p.id, p.name FROM Products p LEFT JOIN product_category pc ON p.id = pc.category_id ORDER BY p.id LIMIT ?  OFFSET ?";
         try(Connection connection = dbConnection.getDBConnection();
             PreparedStatement statement = connection.prepareStatement(query)) {
-            ;
             statement.setInt(1, offset);
             statement.setInt(2, size);
 
