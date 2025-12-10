@@ -26,9 +26,7 @@ public class DataRetriever {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery(query)) {
             while (rs.next()) {
-                Category category = new Category();
-                category.setId(rs.getInt("id"));
-                category.setName(rs.getString("name"));
+                Category category = new Category(rs.getInt("id"), rs.getString("name"));
                 categories.add(category);
             }
         }

@@ -2,13 +2,14 @@ package agito.diarilala;
 
 import lombok.*;
 
-@Getter
-@Setter
-@ToString
+@Data
 @AllArgsConstructor
 @EqualsAndHashCode
+@NoArgsConstructor
 
 public class Category {
-    private final int id;
-    private final String name;
+    private int id;
+    private String name;
+
+
 }
